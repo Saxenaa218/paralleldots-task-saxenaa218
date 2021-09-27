@@ -2,13 +2,29 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import './Navbar.css';
 
-const Navbar: React.FC<any> = () => {
+interface NavItem {
+    location: string;
+    viewName: string;
+}
+
+const NAVBAR_ITEMS: NavItem[] = [
+    {
+        location: '/home',
+        viewName: 'Home'
+    },
+    {
+        location: '/image',
+        viewName: 'Image'
+    }
+]
+
+const Navbar: React.FC<{}> = () => {
     const history = useHistory();
+
     return (
         <header className="navbar">
-            <div>
-                <button onClick={() => history.push('/home')}>Home</button>
-                <button onClick={() => history.push('/image')}>Image</button>
+            <div className="navbar--options">
+                {NAVBAR_ITEMS.map((itm: NavItem) => <span className={itm.location === window.location.pathname ? "navbar--item navbar--active" : "navbar--item"} key={itm.location} onClick={() => history.push(itm.location)}>{itm.viewName}</span>)}
             </div>
         </header>
     );
