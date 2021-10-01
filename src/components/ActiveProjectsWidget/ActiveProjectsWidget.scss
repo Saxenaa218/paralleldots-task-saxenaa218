@@ -1,0 +1,37 @@
+.active-projects-widget {
+    flex: 2;
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .avatar-and-details {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            .details {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .time-remaining {
+                    color: black;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .budget {
+            color: #36a892;
+            font-weight: bolder;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

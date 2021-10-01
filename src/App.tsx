@@ -3,7 +3,7 @@ import { BrowserRouter, Route, RouteComponentProps } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./redux";
 
-import "./App.css";
+import "./App.scss";
 
 const Routes = lazy(() => import("./routes"));
 

@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+label {
+  font-size: 12px;
+  color: grey;
+}
+
+.grey-btn {
+  padding: 5px 10px;
+  background-color: lightgrey;
+  border-radius: 3px;
+  border: none;
+}
+
+.blue-btn-link {
+  color: #034ffe;
+  background: transparent;
+  border: none;
+  padding: 5px 10px;
+  &:hover {
+      background-color: lightgrey;
+      transition: 0.2s ease-in-out;
+      border-radius: 2px;
+      cursor: pointer;
+  }
+}
+
+button {
+  &:hover {
+      cursor: pointer;
+  }
+}
+
+.blue-btn {
+  background-color: #034ffe;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  background-image: linear-gradient(to right, #034ffe, #6f97f2);
+  &:hover {
+      cursor: pointer;
+  }
+}
+
+.white-btn {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
