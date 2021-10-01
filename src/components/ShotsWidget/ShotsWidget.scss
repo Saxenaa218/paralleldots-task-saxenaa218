@@ -1,0 +1,23 @@
+.shots {
+    .shots--label{
+        padding: 20px 0 10px 0;
+    }
+    .shots-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                max-width: 70%;
+            }
+            .right {
+    
+            }
+        }
+    }
+}

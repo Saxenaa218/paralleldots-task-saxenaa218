@@ -1,0 +1,11 @@
+.spread-your-profile {
+    flex: 2;
+    .speed-label {
+        padding: 20px 0 10px 0;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

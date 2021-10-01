@@ -1,0 +1,90 @@
+.home {
+    padding: 0 20px;
+    background-color: #f3f4fb;
+    .first {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+        .first--label{
+            padding: 20px 0 10px 0;
+        }
+        .profile {
+            flex: 3;
+            .header {
+                padding-bottom: 15px;
+                border-bottom: 1px solid lightgray;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                .header-avatar {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    .profile-names {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                    }
+                }
+            }
+            .numbers {
+                display: flex;
+                justify-content: space-evenly;
+                gap: 20px;
+                padding: 15px 0;
+                border-bottom: 1px solid lightgray;
+                .each {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+            }
+        }
+        .page-middle-card {
+            flex: 5;
+            .header {
+                padding-bottom: 15px;
+                border-bottom: 1px solid lightgray;
+            }
+            .body {
+                padding: 15px 0;
+                border-bottom: 1px solid lightgray;
+            }
+            .footer {
+                display: flex;
+                justify-content: center;
+                padding-top: 15px;
+            }
+        }
+    }
+    .second {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        .right {
+            flex: 1;
+            .heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .works-available {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .works-available-card {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
