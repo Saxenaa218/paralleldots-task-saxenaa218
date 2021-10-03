@@ -56,8 +56,17 @@ const Home: React.FC<any> = () => {
                             <label>Give your support</label>
                         </div>
                         <div className="body">
-                            Quantity
-                            Quantity
+                            <div className="body-head">
+                                <div className="body-head-avatar">
+                                    <Avatar src={"A"} size={50} />
+                                    <div className="body-head-details">
+                                        <span>Quantity</span>
+                                        <div className="select-quantity">
+                                            <input type="range" min="$1" max="$100" value="$25" className="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="footer">
                             <button className="blue-btn-link">Support</button>
